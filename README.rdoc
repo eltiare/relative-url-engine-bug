@@ -2,4 +2,4 @@
 
 This is a sample Rails 4.2 application with an engine to show a bug with the config.relative_url_root option. The engine
 is mounted on the same path. Visit http://localhost:3000/relative after bundling the app and running `rails s` in the root
-directory. There are two links, one of them to the main_app path and the other to the Argh engine.
+directory. There are links to the main app and the engine in the simplified navigation.
