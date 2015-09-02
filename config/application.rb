@@ -21,5 +21,9 @@ module RelativeUrlEngine
     # config.i18n.default_locale = :de
 
     config.relative_url_root = '/relative'
+
+    # In order to fix the problem, the following options must be set.
+    routes.default_url_options ||= {}
+    routes.default_url_options[:script_name]= ''
   end
 end

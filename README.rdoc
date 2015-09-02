@@ -1,5 +1,12 @@
-== README
+= README
 
 This is a sample Rails 4.2 application with an engine to show a bug with the config.relative_url_root option. The engine
 is mounted on the same path. Visit http://localhost:3000/relative after bundling the app and running `rails s` in the root
 directory. There are links to the main app and the engine in the simplified navigation.
+
+== Workaround
+The workaround for this problem is noted in config/application.rb. Namely, the following lines:
+
+  # In order to fix the problem, the following options must be set.
+  routes.default_url_options ||= {}
+  routes.default_url_options[:script_name]= ''
