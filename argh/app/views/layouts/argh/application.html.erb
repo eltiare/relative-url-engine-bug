@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Argh</title>
+  <%= stylesheet_link_tag    "argh/application", media: "all" %>
+  <%= javascript_include_tag "argh/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<p>Here there be navigation:</p>
+
+<ul>
+  <li><%= link_to 'The mainland', main_app.root_path %></li>
+  <li><%= link_to 'The Siege Engine', argh.siege_path %></li>
+</ul>
+
+
+<%= yield %>
+
+</body>
+</html>

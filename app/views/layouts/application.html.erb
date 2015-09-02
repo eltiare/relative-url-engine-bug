@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RelativeUrlEngine</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<p>Here there be navigation:</p>
+
+<ul>
+  <li><%= link_to 'The mainland', main_app.root_path %></li>
+  <li><%= link_to 'The Siege Engine', argh.siege_path %></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>
